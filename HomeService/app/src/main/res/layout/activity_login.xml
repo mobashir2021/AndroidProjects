@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundhs"
+    android:id="@+id/loginformid"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="SIGNUP"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/custommedium"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtriderappmain"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Home services app"
+        android:textColor="@color/bottomText"
+
+        android:textSize="10sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:layout_above="@id/txtriderappmain"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="SIGNIN"
+            android:layout_marginRight="6dp"
+            android:fontFamily="@font/custombold"
+            android:background="@drawable/btn_signin_background"
+            android:id="@+id/choosesignin"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="@font/custombold"
+            android:background="@drawable/btn_register_background"
+            android:id="@+id/chooseregister"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
